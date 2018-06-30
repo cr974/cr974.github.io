@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>C & R</title>
+  <style>
+    html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video, button {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	/* vertical-align: baseline; */
+}
+ol, ul {
+	list-style: none;
+}
+html, body {
+  height: 100%!important;
+}
+  .head {
+    padding: 10px;
+    background-color: #162b48;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  .main {
+    margin: 0 100px;
+    padding: 20px 0;
+    position: relative;
+  }
+  .logo {
+    height: 32px;
+  }
+  .nav {
+    position: absolute;
+    top: 50%;
+    right: 0px;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 14px;
+  }
+  .nav li {
+    display: inline-block;
+    margin-left: 20px;
+  }
+  .nav li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  .nav li a:hover {
+    opacity: 0.8;
+  }
+  .banner {
+    height: 100%;
+    background-image: url('./images/Reunion.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .content {
+    text-align: center;
+    line-height: 1;
+    margin-bottom: -1000px;
+  }
+  .title {
+    background: rgba(255, 255, 255, 0.7);
+  }
+  .sub-title {
+    padding-top: 30px;
+    font-size: 12px;
+    color: #0c3c60;
+  }
+  .main-title {
+    padding: 20px 0 30px;
+    font-size: 44px;
+  }
+  .major-list {
+    background: #fff;
+    padding: 70px 0;
+  }
+  .major-list-item {
+    padding: 30px;
+    display: inline-block;
+    width: 19%;
+    background: #162b48;
+    margin-right: 36px;
+    color: #fff;
+  }
+  .major-list-item:last-child {
+    margin-right: 0;
+  }
+  .major-title {
+    font-size: 16px;
+  }
+  .major-intro {
+    margin: 30px 0;
+    font-size: 12px;
+    line-height: 1.5;
+    height: 126px;
+    overflow: hidden;
+  }
+  .major-more {
+    display: inline-block;
+    background: #70a5c9;
+    width: 140px;
+    font-size: 14px;
+    line-height: 38px;
+    height: 38px;
+    color: #fff;
+  }
+  .section {
+    padding: 80px 150px 66px;
+    background: #d2e0eb;
+  }
+  .section-title {
+    font-size: 44px;
+    color: #0f3d5e;
+  }
+  .section-content {
+    padding: 60px 0 90px;
+    font-size: 12px;
+    line-height: 1.5;
+    color: #0f3d5e;
+  }
+  .section-more {
+    display: inline-block;
+    width: 140px;
+    font-size: 14px;
+    line-height: 38px;
+    height: 38px;
+    background: #0f3d5e;
+    color: #fff;
+  }
+  .section.contact {
+    background: #0f3d5e;
+  }
+  .contact .section-title {
+    color: #fff;
+  }
+  .contact .section-content {
+    color: #fff;
+  }
+  </style>
+</head>
+<body>
+<header class="head">
+  <div class="main">
+      <img src="./images/logo_a.png" alt="" class="logo">
+      <ul class="nav">
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Clients</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+  </div>
+</header>
+<div class="banner"></div>
+<div class="content" data-0="margin-top:0px;" data-1000="margin-top:-1000px;">
+  <h1 class="title">
+    <p class="sub-title">DEVELOPING INNOVATIVE STRATEGIES</p>
+    <p class="main-title">ACHIEVING GROWTH</p>
+  </h1>
+  <ul class="major-list">
+    <li class="major-list-item">
+      <h3 class="major-title">SERVICES</h3>
+      <p class="major-intro">I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. I’m a great place for you to tell a story and let your users know a little more about you.</p>
+      <a class="major-more">More Info</a>
+    </li>
+      <li class="major-list-item">
+          <h3 class="major-title">PROJECTS</h3>
+          <p class="major-intro">I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. I’m a great place for you to tell a story and let your users know a little more about you.</p>
+          <a class="major-more">More Info</a>
+        </li>
+        <li class="major-list-item">
+            <h3 class="major-title">CLIENTS</h3>
+            <p class="major-intro">I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. I’m a great place for you to tell a story and let your users know a little more about you.</p>
+            <a class="major-more">More Info</a>
+          </li>
+  </ul>
+  <div class="section about">
+    <h2 class="section-title">ABOUT US</h2>
+    <div class="section-content">
+      <p>I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. I’m a great place for you to tell a story and let your users know a little more about you.</p>
+      <p>This is a great space to write long text about your company and your services. You can use this space to go into a little more detail about your company. Talk about your team and what services you provide. Tell your visitors the story of how you came up with the idea for your business and what makes you different from your competitors. </p>
+  </div>
+    <a class="section-more">Read More</a>
+  </div>
+  <div class="section contact">
+    <h2 class="section-title">CONTACT US</h2>
+    <div class="section-content contact-content">
+      <p>Tél :+262 (0)692 41 88 77</p>
+      <p>Email： crconsulting974@gmail.com></p>
+      <p>Address： 49 av de lattre de tassigny - 97490 Ste Clotilde， ILE DE LA REUNION</p>
+      <p>Site web : www.cr974.fr</p>
+    </div>
+
+  </div>
+</div>
+</body>
+<script type="text/javascript" src="skrollr.min.js"></script>
+	<script type="text/javascript">
+	var s = skrollr.init();
+	</script>
+</html>
