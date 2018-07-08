@@ -69,7 +69,7 @@ html, body {
     opacity: 0.8;
   }
   .banner-title {
-    font-size: 48px;
+    font-size: 44px;
     color: #70a5c9;
     margin-top: 150px;
     text-align: center;
@@ -89,33 +89,28 @@ html, body {
 
   .main-content {
     margin: 80px 150px 0;
-  }
-  .content-list {
-    color: #4e678a;
-    font-size: 24px;
     line-height: 2;
   }
-  .content-list li {
-    display: flex;
-    margin-bottom: 60px;
+  .intro {
+    font-size: 20px;
+    color: #4e678a;
   }
-  .content-list h3 {
-    margin: 0 0 10px;
+  .photo-list {
+    font-size: 0;
+    margin-bottom: 100px;
   }
-  .content-pic {
-    width: 300px;
-    height: 200px;
+  .photo-list-item {
+    margin-top: 50px;
+    display: inline-block;
+    width:45%;
   }
-  .content-desc {
-    flex: 1;
-    margin-left: 40px;
+  .photo-list-item:nth-child(2n) {
+    margin-left: 5%;
   }
-  .content-pic img{
+  .photo-img {
     width: 100%;
-    height: 100%;
-    vertical-align: top;
-    object-fit: cover;
   }
+
   </style>
 </head>
 <body>
@@ -123,53 +118,32 @@ html, body {
   <div class="main">
       <img src="./images/logo_a.png" alt="" class="logo">
       <ul class="nav">
-        <li><a href="#">Étendue de nos activités</a></li>
-        <li><a href="#">Exemples de projets aboutis</a></li>
-        <li><a href="#">Galerie photos</a></li>
+          <li><a href="./about-zh.html">关于我们</a></li>
+          <li><a href="./business-zh.html">业务范围</a></li>
+          <li><a href="./example-zh.html">成功案例</a></li>
+          <li><a href="./photos-zh.html">相册分享</a></li>
+          <li><a href="./index-zh.html#contact">联系方式</a></li>
       </ul>
   </div>
 </header>
 <div class="banner-title">
-  <h2>Étendue de nos activités</h2>
+  <h2>相册分享</h2>
 </div>
 <div class="main-content">
-  <ol class="content-list">
-    <li>
-      <div class="content-pic"><img src="./images/b_1.png" alt=""></div>
-      <div class="content-desc">
-          <h3>L’énergie et les services publics</h3>
-      </div>
+  <div class="intro">本公司多年参与的项目和活动现场照片</div>
+  <ul class="photo-list">
+    <li class="photo-list-item">
+      <img src="images/p_1.png" alt="" class="photo-img">
     </li>
-    <li>
-      <div class="content-pic"><img src="./images/b_2.png" alt=""></div>
-      <div class="content-desc">
-          <h3>Le tourisme</h3>
-      </div>
+    <li class="photo-list-item">
+      <img src="images/p_2.png" alt="" class="photo-img">
     </li>
-    <li>
-      <div class="content-pic"><img src="./images/b_3.png" alt=""></div>
-      <div class="content-desc">
-          <h3>L’Éducation</h3>
-      </div>
+    <li class="photo-list-item">
+      <img src="images/p_3.png" alt="" class="photo-img">
     </li>
-    <li>
-      <div class="content-pic"><img src="./images/b_4.png" alt=""></div>
-      <div class="content-desc">
-          <h3>Le commerce de détail et le transport logistique</h3>
-      </div>
+    <li class="photo-list-item">
+      <img src="images/p_4.png" alt="" class="photo-img">
     </li>
-    <li>
-      <div class="content-pic"><img src="./images/b_5.png" alt=""></div>
-      <div class="content-desc">
-          <h3>Traduction</h3>
-      </div>
-    </li>
-    <li>
-      <div class="content-pic"><img src="./images/b_6.jpg" alt=""></div>
-      <div class="content-desc">
-          <h3>Autres services de consultation</h3>
-      </div>
-    </li>
-  </ol>
+  </ul>
 </div>
 </html>
