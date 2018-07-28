@@ -91,71 +91,61 @@ html, body {
 
   .main-content {
     margin: 80px 150px 0;
-  }
-  .content-list {
-    color: #4e678a;
-    font-size: 20px;
     line-height: 2;
   }
-  .content-list li {
-    display: flex;
-    margin-bottom: 60px;
+  .intro {
+    font-size: 20px;
+    color: #4e678a;
   }
-  .content-list h3 {
-    margin: 0 0 10px;
+  .photo-list {
+    font-size: 0;
+    margin-bottom: 100px;
   }
-  .content-pic {
-    width: 300px;
-    height: 200px;
+  .photo-list-item {
+    margin-top: 50px;
+    display: inline-block;
+    width:45%;
   }
-  .content-desc {
-    flex: 1;
-    margin-left: 40px;
+  .photo-list-item:nth-child(2n) {
+    margin-left: 5%;
   }
-  .content-desc .desc {
-    font-size: 12px;
-    color: #0C3C60;
-  }
-  .content-pic img{
+  .photo-img {
     width: 100%;
-    height: 100%;
-    vertical-align: top;
-    object-fit: cover;
   }
+
   </style>
 </head>
 <body>
 <header class="head">
   <div class="main">
-    <a href="./index-zh.html"><img src="./images/logo_a.png" alt="" class="logo"></a>
+    <a href="./index.html"><img src="./images/logo_a.png" alt="" class="logo"></a>
       <ul class="nav">
-          <li><a href="./about-zh.html">关于我们</a></li>
-          <li><a href="./business-zh.html">业务范围</a></li>
-          <li><a href="./example-zh.html">成功案例</a></li>
-          <li><a href="./photos-zh.html">相册分享</a></li>
-          <li><a href="./index-zh.html#contact">联系方式</a></li>
+        <li><a href="./about.html">Présentation</a></li>
+        <li><a href="./business.html">nos activités</a></li>
+        <li><a href="./example.html">projets</a></li>
+        <li><a href="./photos.html">Galerie photos</a></li>
+        <li><a href="./index.html#contact">Contact</a></li>
       </ul>
   </div>
 </header>
 <div class="banner-title">
-  <h2>成功案例</h2>
+  <h2>Galerie photos</h2>
 </div>
 <div class="main-content">
-  <ol class="content-list">
-    <li>
-      <div class="content-pic"><img src="./images/e_1.jpg" alt=""></div>
-      <div class="content-desc">
-          <h3>中国知名旅游企业</h3>
-          <p class="desc">我们主导了中国知名旅游企业与当地一些旅游机构（如：Bourbon tourisme, parapente des z’iles , tunnel de lave等）建立合作，协助共同开发旅游市场。</p>
-      </div>
+  <div class="intro">Photographies sur place des nombreuses années de projets et d'activités de la société.</div>
+  <ul class="photo-list">
+    <li class="photo-list-item">
+      <img src="images/p_1.jpg" alt="" class="photo-img">
     </li>
-    <li>
-      <div class="content-pic"><img src="./images/e_2.jpg" alt=""></div>
-      <div class="content-desc">
-          <h3>留尼汪贸易公司</h3>
-          <p class="desc">我们为多家留尼汪岛百货店，提供最新中国小商品货源信息和资料，与中国市场建立合作，协助共同开发展留尼汪岛经济。</p>
-      </div>
+    <li class="photo-list-item">
+      <img src="images/p_2.jpg" alt="" class="photo-img">
     </li>
-  </ol>
+    <li class="photo-list-item">
+      <img src="images/p_3.jpg" alt="" class="photo-img">
+    </li>
+    <li class="photo-list-item">
+      <img src="images/p_4.jpg" alt="" class="photo-img">
+    </li>
+  </ul>
 </div>
 </html>

@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>C & R</title>
   <style>
@@ -31,6 +30,7 @@ ol, ul {
 }
 html, body {
   height: 100%!important;
+  min-width: 1000px;
 }
   .head {
     padding: 10px;
@@ -39,14 +39,23 @@ html, body {
     top: 0;
     left: 0;
     right: 0;
+    min-width: 980px;
   }
   .main {
-    margin: 0 100px;
+    margin: 0 150px;
     padding: 20px 0;
     position: relative;
+    min-width: 700px;
   }
   .logo {
     height: 32px;
+  }
+  .switch {
+    position: absolute;
+    top: 10px;
+    right: -80px;
+    color: #fff;
+    font-size: 12px;
   }
   .nav {
     position: absolute;
@@ -82,13 +91,8 @@ html, body {
   .title {
     background: rgba(255, 255, 255, 0.7);
   }
-  .sub-title {
-    padding-top: 30px;
-    font-size: 12px;
-    color: #0c3c60;
-  }
   .main-title {
-    padding: 20px 0 30px;
+    padding: 30px 0;
     font-size: 44px;
   }
   .major-list {
@@ -115,6 +119,7 @@ html, body {
     line-height: 1.5;
     height: 126px;
     overflow: hidden;
+    text-align: left;
   }
   .major-more {
     display: inline-block;
@@ -157,57 +162,77 @@ html, body {
   .contact .section-content {
     color: #fff;
   }
+  .map {
+    display: inline-block;
+    vertical-align: top;
+    width: 50%;
+  }
+  .contact-con {
+    margin-left: 8%;
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+    max-width: 40%;
+  }
+  .contact-item {
+    margin-bottom: 20px;
+  }
   </style>
 </head>
 <body>
 <header class="head">
   <div class="main">
-      <img src="./images/logo_a.png" alt="" class="logo">
+      <a href="./index.html"><img src="./images/logo_a.png" alt="" class="logo"></a>
+      <a href="./index-zh.html" class="switch">中文版</a>
       <ul class="nav">
-        <li><a href="#">Étendue de nos activités</a></li>
-        <li><a href="#">Exemples de projets aboutis</a></li>
-        <li><a href="#">Galerie photos</a></li>
+        <li><a href="./about.html">Présentation</a></li>
+        <li><a href="./business.html">nos activités</a></li>
+        <li><a href="./example.html">projets</a></li>
+        <li><a href="./photos.html">Galerie photos</a></li>
+        <li><a href="./index.html#contact">Contact</a></li>
       </ul>
   </div>
 </header>
 <div class="banner"></div>
 <div class="content" data-0="margin-top:0px;" data-1000="margin-top:-1000px;">
   <h1 class="title">
-    <p class="sub-title">DEVELOPING INNOVATIVE STRATEGIES</p>
-    <p class="main-title">ACHIEVING GROWTH</p>
+    <p class="main-title">Création et Rêve</p>
   </h1>
   <ul class="major-list">
     <li class="major-list-item">
-      <h3 class="major-title">SERVICES</h3>
-      <p class="major-intro">I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. I’m a great place for you to tell a story and let your users know a little more about you.</p>
-      <a class="major-more">More Info</a>
+      <h3 class="major-title">Étendue de nos activités</h3>
+      <p class="major-intro">Nous proposons des services de conseils de gestion pour des projets en Chine, à La Réunion et en France : la création d’entreprises, la promotion des ventes de marques, le développement des programmes, la coopération des entreprises, et la formation du personnel.</p>
+      <a class="major-more">plus</a>
     </li>
       <li class="major-list-item">
-          <h3 class="major-title">PROJECTS</h3>
-          <p class="major-intro">I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. I’m a great place for you to tell a story and let your users know a little more about you.</p>
-          <a class="major-more">More Info</a>
+          <h3 class="major-title">Exemples de projets aboutis</h3>
+          <p class="major-intro">Les entreprises touristiques en Chine.<br/><br/>Société de commerce réunionnaise.</p>
+          <a class="major-more">plus</a>
         </li>
         <li class="major-list-item">
-            <h3 class="major-title">CLIENTS</h3>
-            <p class="major-intro">I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. I’m a great place for you to tell a story and let your users know a little more about you.</p>
-            <a class="major-more">More Info</a>
+            <h3 class="major-title">Galerie photos</h3>
+            <p class="major-intro">Photographies sur place des nombreuses années de projets et d'activités de la société.</p>
+            <a class="major-more">plus</a>
           </li>
   </ul>
   <div class="section about">
-    <h2 class="section-title">ABOUT US</h2>
+    <h2 class="section-title">Présentation</h2>
     <div class="section-content">
-      <p>I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. I’m a great place for you to tell a story and let your users know a little more about you.</p>
-      <p>This is a great space to write long text about your company and your services. You can use this space to go into a little more detail about your company. Talk about your team and what services you provide. Tell your visitors the story of how you came up with the idea for your business and what makes you different from your competitors. </p>
+      <p>Créée en 2018, la société C&R est une des sociétés de consulting mondialement connue. Les initiales C et R représentent la Création et le Rêve, mais également la Chine et la Réunion.<br/>Notre société s'engage à fournir aux entreprises chinoises, réunionnaises et françaises, ainsi qu’aux entreprises internationales, aux agences gouvernementales, aux organisations locales ou aux associations de conseils,  une assistance technique ainsi que des services dans des domaines tels que l’énergie propre, les nouvelles technologies, le  tourisme, l’éducation, l’industrie, et le commerce de détail, etc.<br/>La société C&R se veut d’être une société moderne de conseils de gestion qui adhère aux principes d'honnêteté, fiabilité, diligence, responsabilité, de coopération-négociation et de création de valeur tangible. Notre approche unique en matière d'assistance dans les services coopératifs et l’utilisation de nos sources étendues, de nos ressources humaines abondantes, et notre expérience pratique riche, nous permettent de fournir de meilleurs services de consulting en terme de rapidité et de pérennité,  afin d’aider nos clients à construire un pont vers leur succès.<br/>En partenariat avec vous, notre objectif est la création d’un avenir meilleur.</p>
   </div>
-    <a class="section-more">Read More</a>
+    <a class="section-more">plus</a>
   </div>
+  <a href="javascript:;" id="contact"></a>
   <div class="section contact">
-    <h2 class="section-title">CONTACT US</h2>
+    <h2 class="section-title">Contact</h2>
     <div class="section-content contact-content">
-      <p>Tél :+262 (0)692 41 88 77</p>
-      <p>Email： crconsulting974@gmail.com></p>
-      <p>Address： 49 av de lattre de tassigny - 97490 Ste Clotilde， ILE DE LA REUNION</p>
-      <p>Site web : www.cr974.fr</p>
+      <img class="map" src="images/map.jpeg" alt="">
+      <div class="contact-con">
+        <p class="contact-item">Tél :<br/>+262 (0)692 41 88 77</p>
+        <p class="contact-item">Email :<br/>crconsulting974@gmail.com></p>
+        <p class="contact-item">Address :<br/>49 av de lattre de tassigny - 97490 Ste Clotilde， ILE DE LA REUNION</p>
+        <p class="contact-item">Site web :<br/>www.cr974.fr</p>
+      </div>
     </div>
 
   </div>
